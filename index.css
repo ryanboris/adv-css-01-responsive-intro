@@ -1,0 +1,39 @@
+/* fixed */
+/* .container {
+  width: 800px;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 0 auto;
+} */
+
+/*fluid*/
+/* .container {
+  width: 98%;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding: 20px 1%;
+} */
+
+/*adaptive*/
+.container {
+  width: 800px;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    background: gray;
+  }
+
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a {
+    margin-bottom: 20px;
+  }
+}
