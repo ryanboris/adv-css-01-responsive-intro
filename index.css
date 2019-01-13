@@ -15,9 +15,9 @@
 } */
 
 /*adaptive*/
-.container {
+/* .container {
   width: 800px;
-  padding: 20px;
+  padding: 20px 1.25%;
   border: 1px solid red;
   margin: 0 auto;
 }
@@ -36,4 +36,148 @@
   .container header nav a {
     margin-bottom: 20px;
   }
+} */
+.container {
+  max-width: 800px;
+  padding: 20px 1.25%;
+  border: 1px solid red;
+  margin: 0 auto;
 }
+
+@media (max-width: 500px) {
+  .container {
+    background: gray;
+  }
+
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a {
+    margin-bottom: 20px;
+  }
+}
+
+.box {
+  width: 60%;
+  height: 100px;
+}
+.box1 {
+  background: teal;
+}
+.box2 {
+  background: gold;
+}
+.box3 {
+  background: pink;
+}
+@media (min-width: 400px) {
+  .box {
+    width: 60%;
+    height: 100px;
+  }
+  .box1 {
+    background: blue;
+  }
+  .box2 {
+    background: green;
+  }
+  .box3 {
+    background: red;
+  }
+}
+@media (min-width: 768px) {
+  .box {
+    width: 60%;
+    height: 100px;
+  }
+
+  .box1 {
+    background: aqua;
+  }
+
+  .box2 {
+    background: crimson;
+  }
+
+  .box3 {
+    background: darkgray;
+  }
+}
+@media (min-width: 1000px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+  .box1 {
+    background: purple;
+  }
+  .box2 {
+    background: lightblue;
+  }
+  .box3 {
+    background: gray;
+  }
+}
+
+/* 
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background: aqua;
+}
+
+.box2 {
+  background: crimson;
+}
+
+.box3 {
+  background: darkgray;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    width: 80%;
+  }
+  .box1 {
+    background: blue;
+  }
+  .box2 {
+    background: green;
+  }
+  .box3 {
+    background: red;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: 60%;
+  }
+  .box1 {
+    background: teal;
+  }
+  .box2 {
+    background: gold;
+  }
+  .box3 {
+    background: pink;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    width: 80%;
+  }
+  .box1 {
+    background: purple;
+  }
+  .box2 {
+    background: lightblue;
+  }
+  .box3 {
+    background: gray;
+  }
+} */
